@@ -1,0 +1,65 @@
+# def update_stocks():
+#     values = stock.objects.all()
+#     for i in values:
+#         company   = i.Script
+#         price = find_shares(company)
+#         i.LTP = price
+#         i.save()
+# # sched = BlockingScheduler()
+# # sched.add_job(update_stocks(), 'interval',seconds=10) #minute
+# # sched.start()
+
+    <!-- {% include "admin/dashboard.html" %} {% block 'body' %} -->
+
+
+
+1) add static files in this project
+2) delete function
+3) edit function
+4) add function
+
+  <table class="table table-striped table-hover .table-responsive">
+            <thead>
+                <tr>
+                    <th>Call</th>
+                    <th>Time</th>
+                    <th>Script</th>
+                    <th>Price</th>
+                    <th>TGT1/PTS</th>
+                    <th>TGT2/PTS</th>
+                    <th>TGT3/PTS</th>
+                    <th>SL</th>
+                    <th>LTP</th>
+                    <th>Remarks</th>
+                    <th>Add</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in list %}
+                <tr>
+                    <td><input type="text" readonly="readonly" value={{i.Call}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.Timee}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.Script}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.Price}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.TGT1_PTS}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.TGT2_PTS}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.TGT3_PTS}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.SL}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.LTP}}></td>
+                    <td><input type="text" readonly="readonly" value={{i.Remarks}}></td>
+                    {% if i.ShowToUsers %}
+                    <td><input type="button" value="Added" class="btn btn-primary btn-sm"></button>
+                    </td>
+                    {% else %}
+                    <td><input type="button" value="Add" class="btn btn-primary btn-sm" ;onclick="location.href='{% url 'addtouser' i.id %}'"></button>
+                    </td>
+                    {% endif %}
+                    <td><button type="button" class="btn btn-primary btn-sm" ;onclick="location.href='{% url 'edit' i.id %}'">Edit</button></td>
+                    <td><input type="button" value="Delete" class="btn btn-primary btn-sm" ;onclick="location.href='{% url 'delete' i.id %}'"></button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>

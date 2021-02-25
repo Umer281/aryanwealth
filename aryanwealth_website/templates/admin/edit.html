@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(242, 250, 250);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Add padding to containers */
+        
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+        /* Full-width input fields */
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        /* Overwrite default styles of hr */
+        
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        /* Set a style for the submit button */
+        
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        /* Add a blue text color to links */
+        
+        a {
+            color: dodgerblue;
+        }
+        /* Set a grey background color and center the text of the "sign in" section */
+        
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <form method="POST">
+        <div class="container">
+            <input type="text" name="Call" placeholder="Call">
+            <input type="text" value={{name.Time}} name="Time" placeholder="Time">
+            <input type="text" value={{name.Script}} name="Script" placeholder="Script">
+            <input type="text" value={{name.Price}} name="Price" placeholder="Price">
+            <input type="text" value={{name.TGT1_PTS}} name="TGT1_PTS" placeholder="TGT1/PTS">
+            <input type="text" value={{name.TGT2_PTS}} name="TGT2_PTS" placeholder="TGT2/PTS">
+            <input type="text" value={{name.TGT3_PTS}} name="TGT3_PTS" placeholder="TGT3/PTS">
+            <input type="text" value={{name.SL}} name="SL" placeholder="SL">
+            <input type="text" value={{name.Remarks}} name="Remarks" placeholder="Remarks">
+            <button type="submit" class="registerbtn">Submit</button>
+        </div>
+    </form> -->
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="container">
+            <h1>Stock Market</h1>
+            <p>Please Edit Here </p>
+            <hr>
+            <label for="Call"><b>Call</b></label>
+            <input type="text" placeholder="Call" name="Call" id="Call" required value={{name.Call}}>
+
+            <label for="Time"><b>Time</b></label>
+            <input type="text" placeholder="Time" name="Time" id="Time" required value={{name.Time}}>
+
+            <label for="Script"><b>Script</b></label>
+            <input type="text" placeholder="Script" name="Script" id="Script" required value={{name.Script}}>
+
+            <label for="Price"><b>Price</b></label>
+            <input type="text" placeholder="Price" name="Price" id="Price" required value={{name.Price}}>
+
+            <label for="TGT1_PTS"><b>TGT1_PTS</b></label>
+            <input type="text" placeholder="TGT1_PTS" name="TGT1_PTS" id="TGT1_PTS" required value={{name.TGT1_PTS}}>
+
+            <label for="TGT2_PTS"><b>TGT2_PTS</b></label>
+            <input type="text" placeholder="TGT2_PTS" name="TGT2_PTS" id="TGT2_PTS" required value={{name.TGT2_PTS}}>
+
+            <label for="TGT3_PTS"><b>TGT3_PTS</b></label>
+            <input type="text" placeholder="TGT3_PTS" name="TGT3_PTS" id="TGT3_PTS" required value={{name.TGT3_PTS}}>
+
+            <label for="SL"><b>SL</b></label>
+            <input type="text" placeholder="SL" name="SL" id="SL" required value={{name.SL}}>
+
+            <label for="Remarks"><b>Remarks</b></label>
+            <input type="text" placeholder="Remarks" name="Remarks" id="Remarks" value={{remark}}>
+            <hr>
+            <button type="submit" class="registerbtn">Submit</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

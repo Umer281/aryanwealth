@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.terms{
+    margin: 5px;
+    padding: 5px;
+    margin: 30px 90px;
+   
+}
+.terms h1{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(83, 83, 218);
+    text-decoration: underline;
+    
+
+}
+
+
+.terms h2{
+    margin: 5px;
+    padding: 10px;
+    
+    color: rgb(22, 76, 175);
+} 
+
+.terms h3{
+    margin: 5px;
+    padding: 5px;
+    color: rgb(22, 76, 175);
+    
+} 
+
+
+.terms h4{
+    margin: 5px;
+    padding: 10px;
+    margin-left: 50px;
+    color: rgb(22, 76, 175);
+} 
+
+
+
+.terms h5{
+    margin: 5px;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+} 
+
+
+.terms p{
+    margin: 10px;
+    padding: 5px;
+    color: #302e2e;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+   
+   
+} 

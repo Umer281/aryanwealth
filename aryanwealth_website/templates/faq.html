@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gb -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+        body {
+            font-family: "Poppins", sans-serif !important;
+        }
+        a.nav-link:hover{
+          color: #2052a0 !important;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bg-wrap">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <p class="mb-0 phone pl-md-2">
+                  <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +91 9142075403</a> 
+                  <a href="#"><span class="fa fa-paper-plane mr-1"></span> tradewitharyan@gmail.com</a>
+                </p>
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-end">
+                <div class="social-media">
+                  <p class="mb-0 d-flex">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-youtube"><i class="sr-only">Youtube</i></span></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AryanWealth</a>
+      <!-- <form action="#" class="searchform order-sm-start order-lg-last">
+      <div class="form-group d-flex">
+        <input type="text" class="form-control pl-3" placeholder="Search">
+        <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+      </div>
+        </form> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a href="{% url 'home_page' %}" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="{% url 'about_us_page' %}" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{% url 'services_page' %}" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="{% url 'past_performance_page' %}" class="nav-link">Performance</a></li>
+      <!--<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>-->
+      <li class="nav-item"><a href="{% url 'contact_us_page' %}" class="nav-link">Contact</a></li>
+      <li class="nav-item"><a href="{% url 'faq_page' %}" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a class="btn btn-info" style="margin-top: 1.5rem; margin-right: 1rem;" href="{% url 'register_page' %}" class="nav-link">Register</a></li>
+      <li class="nav-item"><a class="btn btn-info" style="margin-top: 1.5rem;" href="{% url 'login_page' %}" class="nav-link">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 ftco-animate pb-5">
+          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>FAQs <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-0 bread">FAQs</h1>
+          </div>
+        </div>
+      </div>
+    </section>  
+      
+        <div class="row">
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">                            
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">What is Intraday with aryan?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">Intraday with aryan is a research analyst and advisory
+                    organisation providing best equity market services in indian stock market.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">Are we are registered with SEBI?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">No we are not sebi registered yet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">What type of services you provide?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">We provides various services, But our prime focus is on
+                    intraday in equity and futures.
+                    Along with intraday we also provide positional script like
+                    BTST, STBT, and short term script (swing trading).
+                    Also we will provide recommendations on your derivative
+                    portfolio.
+                    Over the years, we have gained a substantial portion of the related market with several satisfied clients.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">How can I join services?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">We have free counselling service in which you can take our
+                    guidance for free to choose any of our services and take
+                    suggestions about investment.We will always happy to provide all kind of guidance
+                    related to investment in Equity market.Once you subscribe to any of our services from us, you can inform us through an email, phone call or whatsapp. We will start your services immediately.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">How much minimum capital is required
+                    to join our service?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">In General capital requirement to enrol for any of our stock
+                    equity services is Rs 1,00,000 but you can start with Rs 50,000
+                    capital also.
+                    you should always keep Rs 50,000 spare in case of any
+                    further margin requirement in adverse situation. Please
+                    note that Futures and options trading involves risk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">How many trades will I get on daily basis?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">Generally it lies between 3-10,depending on market</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">Why should I choose intraday with aryan
+                    for intraday services?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">We have a team which has vast experience and do in-depth
+                    analysis in order to provide best services.
+                    Our team have high skilled professionals which purely
+                    focus on customer satisfaction and long lasting
+                    association.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">Do you provide any free trials?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">We are providing free trial from last six month on whatsapp group.
+                    We do not trust in providing any free trials because it's hard
+                    to maintain free trial requests on daily basis.
+                    And we don't have any marketing team who can handle free
+                    trial request on daily basis.We purely focus on our registered clients who have paid to
+                    us and we provide them high quality services.
+                    We always provide our daily statement and profit
+                    screenshot as a proof for upcoming clients for their
+                    satisfaction.
+                    One can check our daily track records with statement from Past Performance by downloading statement in excel format.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">After subscription of services, how will I get
+                    trading recommendations?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">Once you subscribe, we will ask your requirement and as
+                    per your requirement, we will provide you the script
+                    through WhatsApp, Text message.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">How intraday with aryan is a Best Intraday service
+                    provider?</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">We have best and professional research team with vast
+                    experience of stock market.
+                    We have developed some techniques for intraday trading
+                    which not only give satisfied results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="my-3 p-4 bg-light">
+              <div class="d-flex align-items-start">
+                <div class="mr-3 bg-dark text-white rounded-circle">
+                  <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="menu-arrow"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"/><circle cx="12" cy="19" r="1"/></g></g></svg>
+                </div>
+                <div class="">
+                  <a href="#" class="text-dark stretched-link"><h6 class="mb-3" style="font-weight: 600; font-size: 1.1rem;">Are you a genuine intraday stock service
+                    provider? I incurred losses due to fake advisory
+                    services.</h6></a>
+                  <p class="text-secondary" style="line-height: 2;">First of all ,our all services are transparent and we don’t give
+                    false promises and fake commitments.
+                    Most of people give fake promises and wrong commitments
+                    in order to take advance money and can’t fulfil them
+                    because nobody is 100% sure in stock market.
+                    People end up losing their capital due to such fake and
+                    unauthentic people. we make sure that you get best
+                    services experience from our side.
+                    Stock market trading is risky and subject to market risk but
+                    we make sure that you don’t feel like you are cheated
+                    because we never stop supporting you in adverse
+                    situation.
+                    100% accuracy is not possible in stock market but overall
+                    consistent profit can be achieved with proper risk
+                    management and cutting losses method.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+    </div>
+      
+      
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+    <script src="{% static 'js/popper.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js'%}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'js/scrollax.min.js'%}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'js/google-map.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+      
+</body>
+</html>

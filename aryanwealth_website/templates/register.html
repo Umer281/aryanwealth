@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script>
+        function check_pass(){
+            let p = $("#pas").val();
+            let cp = $("#cpas").val();
+
+            if(p==cp){
+                $("#pas").css("border","1px solid green");
+                $("#cpas").css("border","1px solid green");
+                $("#sbbtn").removeAttr("disabled");
+
+
+            }
+            else{
+                $("#pas").css("border","1px solid red");
+                $("#cpas").css("border","1px solid red");
+                $("#sbbtn").attr("disabled","disabled");
+            }
+
+        }
+    
+    </script>
+
+    <style>
+        body{
+            background-color: #dee9ff;
+        }
+
+        .registration-form{
+            padding: 50px 0;
+        }
+
+        .registration-form form{
+            background-color: #fff;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px 50px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+        }
+
+        .registration-form .form-icon{
+            text-align: center;
+            background-color: #5891ff;
+            border-radius: 50%;
+            font-size: 40px;
+            color: white;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 25px;
+            line-height: 100px;
+        }
+
+        .registration-form .item{
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
+        .registration-form .create-account{
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #5791ff;
+            border: none;
+            color: white;
+            margin-top: 20px;
+        }
+        .registration-form .log{
+            max-width: 600px;
+            background-color: #fff;
+            margin: auto;
+            padding: 35px 0;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            color: #9fadca;
+            border-top: 1px solid #dee9ff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+        }
+        @media (max-width: 576px) {
+            .registration-form form{
+                padding: 50px 20px;
+            }
+
+            .registration-form .form-icon{
+                width: 70px;
+                height: 70px;
+                font-size: 30px;
+                line-height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <form method="POST"  >
+            {% csrf_token %}
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" name="username"  placeholder="Full name"  required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control item" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control item" name="phone_number" placeholder="Mobile Number" pattern="^\d{10}$" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" name="password" placeholder="Password" id="pas" onkeyup="check_pass()" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" name="confirm_password" placeholder="Confirm Password" id="cpas" onkeyup="check_pass()" required>
+                <span id='message'></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="sbbtn" class="btn btn-block create-account">Register</button>
+            </div>
+        </form>
+        <div class="log">
+            <h5>Have an Account? <a style="text-decoration: none;" href="login">Login</a></h5>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('#password, #confirm_password').on('keyup', function () {
+            if ($('#password').val() == $('#confirm_password').val()) {
+                $('#message').hide();
+                //$('#message').html('Matching').css('color', 'green');
+            } 
+            else{
+                $('#message').show();
+                $('#message').html('Password do not match').css('color', 'red');
+            }    
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+if request.method == 'POST':
+current = request.POST["cpwd"]
+new_pas = request.POST["npwd"]
+
+user=RegisteredForms.objects.get(id=request.user.id)
+
+print(user)
