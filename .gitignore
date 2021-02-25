@@ -1,0 +1,5 @@
+db.sqlite3
+.history/
+..idea/
+__pychache__/
+migrations/app
